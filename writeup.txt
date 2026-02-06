@@ -1,0 +1,32 @@
+flow:
+host: sets lobby settings
+
+when going to host game, create a lobby with default settings and instantly go to the waiting room/lobby screen
+this is where the host can modify settings such as time limit, time to return limit, the map boundaries, and other game rules
+other players  join the lobby while the host is setting up the rules and can see the changes in real time
+
+
+once the host is satisfied with the settings, they can ready up and when all players are ready, the host can start the game
+the game then begins with the agreed upon settings
+
+the game logic will reference the lobby settings to enforce the rules during gameplay
+for example, if the time limit is set to 10 minutes, the game will end after that duration
+if the map boundaries are set, players will be restricted to those areas
+
+the lobby settings will be saved for future games within that lobby session, but are reset when a new lobby is created
+
+when a game ends, players are returned to the lobby where they can adjust settings for the next round or exit the lobby entirely
+
+at any point players can leave the lobby, and if the host leaves, a new host is assigned from the remaining players
+the lobby system ensures a smooth transition between game setup, gameplay, and post-game activities while allowing for customizable game settings
+
+if a player disconnects during the game, they will rejoin, need to ensure that players are linked to device ids or some sort of static identifier to handle reconnections properly
+
+the server and client will use the same basic types and structures to represent lobby settings to ensure consistency and reduce serialization/deserialization overhead
+
+lobby settings structure:
+- time limit (integer, minutes)
+- return to safe zone time limit (integer, seconds)
+- whether there is a safe zone (boolean)
+- map boundary, either selected on a map by the host or a radius from the safe zone (if no safe zone, host current location will be used)
+- time that seekers must wait before they can start seeking (integer, seconds)

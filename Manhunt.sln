@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{965DD8A9-8B0A-40B3-AE27-67F514B750AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManhuntServer", "ManhuntServer\ManhuntServer.csproj", "{43681FC4-F8E2-4851-91F8-7F082F77F8C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManhuntClient", "ManhuntClient\ManhuntClient.csproj", "{8342B0E7-2135-4751-AE3E-2396E9BA3252}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{965DD8A9-8B0A-40B3-AE27-67F514B750AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965DD8A9-8B0A-40B3-AE27-67F514B750AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965DD8A9-8B0A-40B3-AE27-67F514B750AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965DD8A9-8B0A-40B3-AE27-67F514B750AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43681FC4-F8E2-4851-91F8-7F082F77F8C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43681FC4-F8E2-4851-91F8-7F082F77F8C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43681FC4-F8E2-4851-91F8-7F082F77F8C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43681FC4-F8E2-4851-91F8-7F082F77F8C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8342B0E7-2135-4751-AE3E-2396E9BA3252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8342B0E7-2135-4751-AE3E-2396E9BA3252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8342B0E7-2135-4751-AE3E-2396E9BA3252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8342B0E7-2135-4751-AE3E-2396E9BA3252}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
